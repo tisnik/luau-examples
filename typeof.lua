@@ -1,0 +1,21 @@
+v1 = nil
+v2 = true
+v3 = 123
+v4 = 0.5
+v5 = "hello"
+v6 = {1, 2, 3}
+v7 = function() end
+v8 = coroutine.create(function() end)
+v9 = newproxy and newproxy(true) or nil
+v10 = buffer and buffer.create(1) or nil
+
+print("typeof(v1)=", typeof(v1))
+print("typeof(v2)=", typeof(v2))
+print("typeof(v3)=", typeof(v3))
+print("typeof(v4)=", typeof(v4))
+print("typeof(v5)=", typeof(v5))
+print("typeof(v6)=", typeof(v6))
+print("typeof(v7)=", typeof(v7))
+print("typeof(v8)=", typeof(v8))
+print("typeof(v9)=", typeof(v9))
+print("typeof(v10)=", typeof(v10))
