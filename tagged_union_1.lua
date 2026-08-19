@@ -1,6 +1,10 @@
 --!strict
 
-type Ok<T> = { type: "ok", value: T}
-type Error<E> = { type: "error", error: E}
-type Result<T, E> = Ok<T> | Error<E>
+type Ok    = { type: "ok", value: string}
+type Error = { type: "error", error: string}
 
+local x: Ok    = { type="ok", value="foo" }
+local y: Error = { type="error", error="PC LOAD LETTER" }
+
+print(type(x), x.type, x.value)
+print(type(y), y.type, y.error)
